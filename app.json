@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/query/category/category",
+    "pages/index/index",
     "pages/shoppingCart/cart/cart",
     "pages/mine/info/info"
   ],

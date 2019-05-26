@@ -1,3 +1,7 @@
-<view>
-  New Page
+<view class="search">
+    <form class="search-form">
+        <image src="/resources/icon/smallIco/search.png" class="search-ico" />
+        <input type="text" placeholder="请输入搜索商品名..." auto-focus class="search-input"
+                    confirm-type="search" onConfirm="" />
+    </form>
 </view>
