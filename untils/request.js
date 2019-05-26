@@ -8,7 +8,11 @@ export default function request(url, method='post', data={}) {
     my.request({
       ...option,
       success: (res) => {
-          resolve(res.data)
+          if(res.data.status === 200) {
+            resolve(res.data)
+          } else {
+            reject(res.data)
+          }
       },
       fail: () => {
         reject('失败')
