@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/query/category/category",
+    "pages/shoppingCart/cart/cart",
+    "pages/mine/info/info"
+  ],
+  "window": {
+    "defaultTitle": "立发购物",
+    "titleBarColor": "#ffbfc7"
+  },
+  "tabBar": {
+    "textColor": "#8a8a8a",
+    "selectedColor": "#ff6699",
+    "backgroundColor": "#fff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页",
+        "icon": "resources/icon/tabBar/index.png",
+        "activeIcon": "resources/icon/tabBar/index-sel.png"
+      },
+      {
+        "pagePath": "pages/query/category/category",
+        "name": "分类",
+        "icon": "resources/icon/tabBar/category.png",
+        "activeIcon": "resources/icon/tabBar/category-sel.png"
+      },
+      {
+        "pagePath": "pages/shoppingCart/cart/cart",
+        "name": "购物车",
+        "icon": "resources/icon/tabBar/shopping-car.png",
+        "activeIcon": "resources/icon/tabBar/shopping-car-sel.png"
+      },
+      {
+        "pagePath": "pages/mine/info/info",
+        "name": "个人中心",
+        "icon": "resources/icon/tabBar/mine.png",
+        "activeIcon": "resources/icon/tabBar/mine-sel.png"
+      }
+    ]
+  }
+}

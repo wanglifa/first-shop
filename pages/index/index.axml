@@ -1,0 +1,95 @@
+<swiper indicator-dots="{{true}}">
+    <block a:for="{{carousels}}">
+      <swiper-item >
+        <image mode="scaleToFill" src="{{item.imageUrl}}"  class="swiper-img"/>
+      </swiper-item>
+    </block>
+</swiper>
+<view class="feature">
+  <view>
+    <image mode="scaleToFill" src="/resources/icon/smallIco/fang.png"/>
+    全场包邮
+  </view>
+  <view>
+    <image mode="scaleToFill" src="/resources/icon/smallIco/flash.png"/>
+    先行赔付
+  </view>
+  <view>
+    <image mode="scaleToFill" src="/resources/icon/smallIco/yuan.png"/>
+    7天无理由
+  </view>
+  <view>
+    <image mode="scaleToFill" src="/resources/icon/smallIco/ling.png"/>
+    退货先补
+  </view>
+</view>
+<view class="img-item-text">
+  <view class="shop-title">
+    <image mode="scaleToFill" src="/resources/icon/smallIco/rec.png"/>
+    推荐商品
+  </view>
+</view>
+<scroll-view scroll-x="{{true}}" class="scroll-items" >
+    <image mode="scaleToFill" src="/resources/items/1001.png" class="shop-img"/>
+    <image mode="scaleToFill" src="/resources/items/1002.png" class="shop-img"/>
+    <image mode="scaleToFill" src="/resources/items/1001.png" class="shop-img"/>
+    <image mode="scaleToFill" src="/resources/items/1002.png" class="shop-img"/>
+    <image mode="scaleToFill" src="/resources/items/1001.png" class="shop-img"/>
+    <image mode="scaleToFill" src="/resources/items/1002.png" class="shop-img"/>
+    <image mode="scaleToFill" src="/resources/items/1001.png" class="shop-img"/>
+    <image mode="scaleToFill" src="/resources/items/1002.png" class="shop-img"/>
+  </scroll-view>
+</view>
+<view class="img-item-text">
+  <view class="shop-title">
+    <image mode="scaleToFill" src="/resources/icon/smallIco/diamond.png"/>
+    商品上新
+  </view>
+</view>
+<view class="new-item-list">
+
+    <view class="item-outter">
+
+      <image src="/resources/items/1002.png" class="new-item-cover" />
+
+      <view class="item-border">
+        <view class="tags">衣服</view>
+        <view class="tags">裤子</view>
+        <view class="tags">奢侈品</view>
+        <view class="tags">裤子</view>
+        <view class="tags">奢侈品</view>
+      </view> 
+
+      <view class="price-border">
+        <view class="price">￥100.00</view>
+        <view class="like-counts">
+          888
+          <image src="/resources/icon/smallIco/likes.png" class="like-ico" />
+        </view>
+      </view> 
+
+    </view>
+
+    <view class="item-outter">
+
+      <image src="/resources/items/1002.png" class="new-item-cover" />
+
+      <view class="item-border">
+        <view class="tags">衣服</view>
+        <view class="tags">裤子</view>
+        <view class="tags">奢侈品</view>
+        <view class="tags">裤子</view>
+        <view class="tags">奢侈品</view>
+      </view> 
+
+      <view class="price-border">
+        <view class="price">￥100.00</view>
+        <view class="like-counts">
+          888
+          <image src="/resources/icon/smallIco/likes.png" class="like-ico" />
+        </view>
+      </view> 
+
+    </view>
+
+  </view>
