@@ -106,3 +106,14 @@ page {
     color: #ff6699;
     margin-bottom: 10rpx;
 }
+.like-counts {
+    font-size: 11px;
+    margin-right: 12rpx;
+    margin-bottom: 10rpx;
+    color: gray;
+}
+.like-ico {
+    width: 18rpx;
+    height: 18rpx;
+    margin-left: 10rpx;
+}

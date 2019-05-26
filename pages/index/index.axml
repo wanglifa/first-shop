@@ -1,4 +1,4 @@
-<swiper indicator-dots="{{true}}">
+<swiper indicator-dots="{{true}}" autoplay="{{true}}">
     <block a:for="{{carousels}}">
       <swiper-item >
         <image mode="scaleToFill" src="{{item.imageUrl}}"  class="swiper-img"/>
@@ -30,16 +30,10 @@
   </view>
 </view>
 <scroll-view scroll-x="{{true}}" class="scroll-items" >
-    <image mode="scaleToFill" src="/resources/items/1001.png" class="shop-img"/>
-    <image mode="scaleToFill" src="/resources/items/1002.png" class="shop-img"/>
-    <image mode="scaleToFill" src="/resources/items/1001.png" class="shop-img"/>
-    <image mode="scaleToFill" src="/resources/items/1002.png" class="shop-img"/>
-    <image mode="scaleToFill" src="/resources/items/1001.png" class="shop-img"/>
-    <image mode="scaleToFill" src="/resources/items/1002.png" class="shop-img"/>
-    <image mode="scaleToFill" src="/resources/items/1001.png" class="shop-img"/>
-    <image mode="scaleToFill" src="/resources/items/1002.png" class="shop-img"/>
-  </scroll-view>
-</view>
+  <block a:for="{{recommendProduct}}">
+    <image mode="scaleToFill" src="{{item.cover}}" class="shop-img"/>
+  </block>
+</scroll-view>
 <view class="img-item-text">
   <view class="shop-title">
     <image mode="scaleToFill" src="/resources/icon/smallIco/diamond.png"/>
@@ -48,48 +42,23 @@
 </view>
 <view class="new-item-list">
 
-    <view class="item-outter">
+    <view class="item-outter" a:for="{{newItemList}}">
 
-      <image src="/resources/items/1002.png" class="new-item-cover" />
+      <image src="{{item.cover}}" class="new-item-cover" />
 
       <view class="item-border">
-        <view class="tags">衣服</view>
-        <view class="tags">裤子</view>
-        <view class="tags">奢侈品</view>
-        <view class="tags">裤子</view>
-        <view class="tags">奢侈品</view>
+        <view class="tags" a:for="{{item.tagList}}" a:for-item="tag">{{tag}}</view>
       </view> 
 
       <view class="price-border">
-        <view class="price">￥100.00</view>
+        <view class="price">￥{{item.priceDiscountYuan}}</view>
         <view class="like-counts">
-          888
+          {{item.likeCounts}}
           <image src="/resources/icon/smallIco/likes.png" class="like-ico" />
         </view>
       </view> 
 
     </view>
 
-    <view class="item-outter">
-
-      <image src="/resources/items/1002.png" class="new-item-cover" />
-
-      <view class="item-border">
-        <view class="tags">衣服</view>
-        <view class="tags">裤子</view>
-        <view class="tags">奢侈品</view>
-        <view class="tags">裤子</view>
-        <view class="tags">奢侈品</view>
-      </view> 
-
-      <view class="price-border">
-        <view class="price">￥100.00</view>
-        <view class="like-counts">
-          888
-          <image src="/resources/icon/smallIco/likes.png" class="like-ico" />
-        </view>
-      </view> 
-
-    </view>
 
   </view>

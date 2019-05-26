@@ -1,8 +1,10 @@
-const app = getApp()
 import index from '/api/index.js'
 Page({
   data: {
-    carousels: []
+    carousels: [],
+    newItemList: [],
+    recommendProduct: [],
+    msg: '你好'
   },
   onReady() {
     index.carousels().then(
@@ -12,12 +14,13 @@ Page({
     )
     index.recommendProduct().then(
       res => {
-        console.log(res)
+        this.setData({recommendProduct: res.data})
       }
     )
     index.newList().then(
       res => {
-        console.log(res)
+        console.log(res.data)
+        this.setData({newItemList: res.data})
       }
     )
   }
