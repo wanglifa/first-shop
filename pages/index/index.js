@@ -6,7 +6,13 @@ Page({
     recommendProduct: [],
     msg: '你好'
   },
+  onPullDownRefresh () {
+    this.initData()
+  },
   onReady() {
+    this.initData()
+  },
+  initData() {
     index.carousels().then(
       (res => {
         this.setData({carousels: res.data})
