@@ -2,13 +2,8 @@ import request from '/untils/request.js'
 const url = {
   Carousels: '/index/carousels',
   RecommendProduct: '/index/items/rec',
-  newList: '/index/items/new'
-}
-const host = 'https://www.imoocdsp.com'
-for (let key in url) {
-  if(url.hasOwnProperty(key)){
-        url[key] = host + url[key]
-    }
+  newList: '/index/items/new',
+  cats: '/cats'
 }
 export default {
   carousels() {

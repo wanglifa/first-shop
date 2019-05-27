@@ -2,6 +2,106 @@
     <form class="search-form">
         <image src="/resources/icon/smallIco/search.png" class="search-ico" />
         <input type="text" placeholder="请输入搜索商品名..." auto-focus class="search-input"
-                    confirm-type="search" onConfirm="" />
+                    confirm-type="search" onConfirm="searchItems" />
     </form>
+</view>
+<view class="category">
+
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=0&catName=奢侈品" open-type="navigate">
+            <image src="/resources/category/0-luxury.png" class="cat-ico" />
+            <view class="cat-name">奢侈品</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=1&catName=当季新品" open-type="navigate">
+            <image src="/resources/category/1-new.png" class="cat-ico"/>
+            <view class="cat-name">当季新品</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=2&catName=裙子" open-type="navigate">
+            <image src="/resources/category/2-skirt.png" class="cat-ico"/>
+            <view class="cat-name">裙子</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=3&catName=裤子" open-type="navigate">
+            <image src="/resources/category/3-trousers.png" class="cat-ico"/>
+            <view class="cat-name">裤子</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=4&catName=鞋子" open-type="navigate">
+            <image src="/resources/category/4-shoes.png" class="cat-ico"/>
+            <view class="cat-name">鞋子</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=5&catName=男朋友" open-type="navigate">
+            <image src="/resources/category/5-boyfriend.png" class="cat-ico"/>
+            <view class="cat-name">男朋友</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=6&catName=精选套装" open-type="navigate">
+            <image src="/resources/category/6-suit.png" class="cat-ico"/>
+            <view class="cat-name">精选套装</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=7&catName=美妆" open-type="navigate">
+            <image src="/resources/category/7-makeup.png" class="cat-ico"/>
+            <view class="cat-name">美妆</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=8&catName=T恤" open-type="navigate">
+            <image src="/resources/category/8-tshirt.png" class="cat-ico"/>
+            <view class="cat-name">T恤</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=9&catName=配饰" open-type="navigate">
+            <image src="/resources/category/9-acessories.png" class="cat-ico"/>
+            <view class="cat-name">配饰</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=10&catName=包包" open-type="navigate">
+            <image src="/resources/category/10-bags.png" class="cat-ico"/>
+            <view class="cat-name">包包</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=11&catName=居家用品" open-type="navigate">
+            <image src="/resources/category/11-home.png" class="cat-ico"/>
+            <view class="cat-name">居家用品</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=12&catName=童装" open-type="navigate">
+            <image src="/resources/category/12-child.png" class="cat-ico"/>
+            <view class="cat-name">童装</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=13&catName=内衣" open-type="navigate">
+            <image src="/resources/category/13-uderwear.png" class="cat-ico"/>
+            <view class="cat-name">内衣</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=14&catName=长裙" open-type="navigate">
+            <image src="/resources/category/14-longuette.png" class="cat-ico"/>
+            <view class="cat-name">长裙</view>
+        </navigator>
+    </view>
+    <view class="cat-item">
+        <navigator url="/pages/query/list/list?searchType=cat&catId=15&catName=母婴" open-type="navigate">
+            <image src="/resources/category/15-baby.png" class="cat-ico"/>
+            <view class="cat-name">母婴</view>
+        </navigator>
+    </view>
+
 </view>
