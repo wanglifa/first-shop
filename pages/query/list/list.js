@@ -1,17 +1,26 @@
 import category from '/api/category.js'
 Page({
-  data: {},
+  data: {
+    titleName: "",
+    itemList: ''
+  },
   onLoad(params) {
-    const {itemName, searchType, catId} = params
+    const {catName, searchType, catId} = params
     
     if (searchType === 'cat') {
       category.searchByCat({catId}).then(res => {
-        console.log(res)
+        this.setData({
+          titleName: catName,
+          itemList: res.data
+        })
       })
     } else if (searchType === 'word') {
       category.search({itemName}).then(
         res => {
-          console.log(res)
+          this.setData({
+            titleName: '搜索结果',
+            itemList: res.data
+          })
         }
       )
     }

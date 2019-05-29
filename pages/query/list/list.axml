@@ -1,3 +1,6 @@
-<view>
-  New Page
+<!-- 商品列表的结果文字显示 -->
+<view class="item-desc-bar">
+    <view class="item-desc-title">{{titleName}}</view>
 </view>
+<import src="/pages/template/itemList/itemList"/>
+<template is="itemList" data="{{newItemList:itemList}}"></template>
