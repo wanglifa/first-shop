@@ -2,8 +2,8 @@
   <view class="new-item-list">
 
     <view class="item-outter" a:for="{{newItemList}}">
-
-      <image src="{{item.cover}}" class="new-item-cover" />
+      <navigator url="/pages/query/item/item?id={{item.id}}">
+        <image src="{{item.cover}}" class="new-item-cover" />
 
       <view class="item-border">
         <view class="tags" a:for="{{item.tagList}}" a:for-item="tag">{{tag}}</view>
@@ -17,8 +17,10 @@
         </view>
       </view> 
 
+      </navigator>
+      
     </view>
-    </view>
+  </view>
 
 
 </template>

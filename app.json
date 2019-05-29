@@ -5,7 +5,8 @@
     "pages/shoppingCart/cart/cart",
     "pages/mine/info/info",
     "pages/query/list/list",
-    "pages/template/itemList/itemList"
+    "pages/template/itemList/itemList",
+    "pages/query/item/item"
   ],
   "window": {
     "defaultTitle": "立发购物",

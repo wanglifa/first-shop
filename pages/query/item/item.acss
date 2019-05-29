@@ -1,0 +1,180 @@
+page {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f5f8;
+}
+
+/* 横向的封面图 start */
+.scroll-item-cover {
+    width: 100%;
+    background-color: white;
+    white-space:nowrap;
+}
+.items-cover {
+    width: 600rpx;
+    height: 885rpx;
+    margin-left: 15rpx;
+    border-radius: 3px;
+}
+/* end */
+
+/* 商品标题 start */
+.item-title {
+    font-size: 16px;
+    line-height: 40rpx;
+    background-color: white;
+    padding: 14rpx;
+}
+/* end */
+
+/* 商品价格 start */
+.price {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.item-price-low {
+    color: #ff6699;
+    font-size: 24px;
+    line-height: 30rpx;
+    padding: 10rpx;
+}
+.item-price-high {
+    color: grey;
+    font-size: 12px;
+    line-height: 30rpx;
+    padding: 18rpx 10rpx 0rpx 10rpx;
+    text-decoration-line: line-through;     /* 定义删除线 */
+    margin-left: 10rpx;
+}
+.item-price-discount {
+    background-color: #e40046;
+    color: white;
+    font-size: 12px;
+    line-height: 30rpx;
+    padding: 0rpx 16rpx;
+    border-radius: 10px;
+    height: 28rpx;
+    margin: 15rpx 10rpx 0rpx 20rpx;
+}
+/* end */
+
+/* 销量 收藏 72小时发货 start */
+.properties {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 14rpx 12rpx;
+    color: #b1b1b1;
+}
+/* end */
+
+/* 商品特色 start */
+.features {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 14rpx 12rpx;
+    color: #696969;
+}
+.feature-ico {
+    width: 20rpx;
+    height: 20rpx;
+    margin-right: 8rpx;
+}
+.feature-item {
+    margin-left: 20rpx;
+}
+/* end */
+
+/* 商品列表的结果文字显示 start  */
+.item-desc-bar {
+    margin-top: 10rpx;
+    background-color: white;
+    font-size: 15px;
+    line-height: 60rpx;
+    padding: 10rpx 0;
+    color: #ff6699;
+}
+.item-desc-title {
+    width: 150rpx;
+    border-bottom: solid 2px;
+    border-bottom-color: #ff6699;
+    margin-left: 30rpx;
+    text-align: center;
+}
+/* end */
+
+/* 商品详情内容 start */
+.item-desc-content {
+    background-color: #f6f6f6;
+    padding-top: 30rpx;
+    /* 固定底部后，商品详情中的最后的100rpx内容会被遮挡 */
+    padding-bottom: 100rpx;
+}
+/* end */
+
+/* 底部操作栏 start */
+.bottom-operator {
+    background-color: white;
+    height: 100rpx;
+    /* 固定底部不可滑动 */
+	position:fixed; 
+	bottom: 0;
+    width: 750rpx;
+    
+    display: flex;
+    flex-direction: row;
+}
+.like-img {
+    width: 15%;
+    text-align: center;
+    padding-top: 14rpx;
+}
+.like-ico {
+    width: 44rpx;
+    height: 44rpx;
+}
+.like-words {
+    color: #676767;
+    font-size: 12px;
+}
+.add-to-cart {
+    color: #3a3932;
+    background-color: #ffe817;
+    width: 35%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100rpx;
+}
+.buy-me {
+    color: white;
+    background-color: #ff6699;
+    width: 35%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100rpx;
+}
+/* end */
+
+/* 为动画实例组件增加样式 */
+.animation-img {
+    margin-top: 20rpx;
+    margin-left: 110rpx;
+    height: 35rpx;
+    width: 35rpx;
+    border: solid 2px;
+    border-color: #ff679a;
+    border-radius: 15px; 
+
+    /* 背景图填满view */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    /* 绝对定位 漂浮起来 */
+    position:absolute;
+}

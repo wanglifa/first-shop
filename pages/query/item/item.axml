@@ -1,0 +1,80 @@
+<scroll-view class="scroll-item-cover" scroll-x="{{true}}">
+
+    <!-- 循环封面图 -->
+    <block a:for="{{headerImages}}" a:for-item="headerImg">
+        <image src="{{headerImg}}" class="items-cover" />
+    </block>
+
+</scroll-view>
+<!-- 商品标题 -->
+<view class="item-title">
+    {{item.name}}
+</view>
+
+<!-- 商品价格信息 -->
+<view class="price">
+    <view class="item-price-low">
+        ￥{{item.priceDiscountYuan}}
+    </view>
+    <view class="item-price-high">
+        ￥{{item.priceNormalYuan}}
+    </view>
+    <view class="item-price-discount">
+        {{item.discounts}}
+    </view>
+</view>
+
+<!-- 销量 收藏 发货 -->
+<view class="properties">
+    <view>
+        销量{{item.sellCounts}}
+    </view>
+    <view>
+        收藏{{item.likeCounts}}人
+    </view>
+    <view>
+        72小时发货    
+    </view>
+</view>
+
+<!-- 分割线 -->
+<view class="line-outter">
+    <view class="line"></view>
+</view>
+
+<!-- 商城特色、服务 -->
+<view class="features">
+    <view class="feature-item">
+        <image src="/resources/icon/smallIco/right.png" class="feature-ico" />
+        全国包邮
+    </view>
+    <view class="feature-item">
+        <image src="/resources/icon/smallIco/right.png" class="feature-ico" />     
+        退货补运费
+    </view>
+    <view class="feature-item">
+        <image src="/resources/icon/smallIco/right.png" class="feature-ico" />        
+        7天无理由
+    </view>
+    <view class="feature-item">
+        <image src="/resources/icon/smallIco/right.png" class="feature-ico" />        
+        闪电发货
+    </view>
+</view>
+
+<!-- 商品详情页标题栏（同商品列表页） -->
+<view class="item-desc-bar">
+    <view class="item-desc-title">商品详情</view>
+</view>
+<view class="item-desc-content">
+
+    <block a:for="{{itemContentArr}}" a:for-item="content">
+        <block a:if="{{content.contentType == 1}}">
+            <view style="{{content.cssStyle}}">{{content.words}}</view>
+        </block>
+        <block a:elif="{{content.contentType == 2}}">
+            <image src="{{content.url}}" style="{{content.cssStyle}}" />
+        </block>
+    </block>
+
+</view>
