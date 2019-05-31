@@ -29,5 +29,20 @@ Page({
         this.setData({newItemList: res.data})
       }
     )
+  },
+  showItem(e) {
+    const {itemId} = e.target.dataset
+    my.navigateTo({
+      url: `/pages/query/item/item?id=${itemId}`
+    })
+  },
+  showItemList(e) {
+    const {item} = e.target.dataset
+    console.log(item.type)
+    if(item.type === 1) {
+      my.navigateTo({
+        ulr: `/pages/query/item/item?id=${item.itemId}`
+      })
+    }
   }
 });

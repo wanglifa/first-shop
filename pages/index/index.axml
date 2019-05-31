@@ -1,7 +1,7 @@
 <swiper indicator-dots="{{true}}" autoplay="{{true}}">
     <block a:for="{{carousels}}">
       <swiper-item >
-        <image mode="scaleToFill" src="{{item.imageUrl}}"  class="swiper-img"/>
+        <image mode="scaleToFill" src="{{item.imageUrl}}"  class="swiper-img" data-item="{{item}}" onTap="showItemList"/>
       </swiper-item>
     </block>
 </swiper>
@@ -31,7 +31,7 @@
 </view>
 <scroll-view scroll-x="{{true}}" class="scroll-items" >
   <block a:for="{{recommendProduct}}">
-    <image mode="scaleToFill" src="{{item.cover}}" class="shop-img"/>
+    <image mode="scaleToFill" src="{{item.cover}}" class="shop-img" data-itemId="{{item.id}}" onTap="showItem"/>
   </block>
 </scroll-view>
 <view class="img-item-text">

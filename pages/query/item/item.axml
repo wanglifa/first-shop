@@ -78,3 +78,28 @@
     </block>
 
 </view>
+<view class="bottom-operator">
+    <view class="like-img" onTap="goToCart">
+        <image src="/resources/icon/smallIco/{{cartIco}}.png" class="like-ico" />
+        <view class="like-words" onTap="">购物车</view>
+    </view>
+
+    <view class="like-img" onTap="likeItem" hidden="{{unlikeHidden}}">
+        <image src="/resources/icon/smallIco/unlike.png" class="like-ico" />
+        <view class="like-words">收藏</view>
+    </view>
+
+        
+    <view class="like-img" onTap="unlikeItem" hidden="{{likeHidden}}">
+        <image src="/resources/icon/smallIco/like.png" class="like-ico" />
+        <view class="like-words">取消收藏</view>
+    </view>
+
+    <view class="add-to-cart" onTap="addToCart">
+        <!-- 定义动画组件，创建实例 -->
+        <view animation="{{animationInfo}}" class="animation-img" style="opacity:{{animationOpacity}};background-image:url('{{headerImages[0]}}')"></view>
+        放入购物车
+    </view>
+    <view class="buy-me" onTap="buyMe">购买</view>
+
+</view>
