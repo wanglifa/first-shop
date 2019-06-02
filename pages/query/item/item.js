@@ -40,6 +40,12 @@ Page({
     this.cartItemIncrease()
 
   },
+  // 跳转到购物车页面
+    goToCart() {
+        my.switchTab({
+            url: '/pages/shoppingCart/cart/cart'
+        });
+    },
   cartItemIncrease() {
     const itemId = this.data.item.id
     let cartArray = my.getStorageSync({

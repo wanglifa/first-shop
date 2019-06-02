@@ -1,3 +1,10 @@
-<view>
-  New Page
+<view class="empty" hidden="{{emptyHidden}}">
+    
+    <image src="/resources/img/goshopping.png" class="goshopping-img" />
+    <view class="empty-words">购物车为空</view>
+
+    <view class="help-yourself-outter">
+        <view class="help-yourself-words" onTap="helpYourself">随便逛一下</view>
+    </view>
+
 </view>

@@ -1,0 +1,135 @@
+page {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f5f8;
+}
+
+/* 空无车为空的时候 start */
+.empty {
+    margin-top: 360rpx;
+    text-align: center;
+}
+.goshopping-img {
+    width: 300rpx;
+    height: 300rpx;
+}
+.empty-words {
+    color: #9c9c9c;
+    font-size: 16px;
+    margin-top: 20rpx;
+}
+.help-yourself-outter { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.help-yourself-words {
+    width: 240rpx;
+    color: #ff679a;
+    font-size: 15px;
+    margin-top: 20rpx;
+    border: solid 1px;
+    border-color: #ff679a;
+    line-height: 50rpx;
+    border-radius: 12px;
+}
+/* end */
+
+/* 底部结算栏 start */
+.bottom-settlement {
+    background-color: white;
+    height: 100rpx;
+    /* 固定底部不可滑动 */
+	position:fixed; 
+	bottom: 0;
+    width: 750rpx;
+    
+    display: flex;
+    flex-direction: row;
+}
+.sel-all-block {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    padding-top: 30rpx;
+    padding-left: 30rpx;
+}
+.sel-all-words {
+    line-height: 44rpx;
+    margin-left: 10rpx;
+    font-size: 13px;
+}
+.select-ico {
+    width: 40rpx;
+    height: 40rpx;
+}
+.total-cal {
+    width: 45%;
+    text-align: right;
+    margin-right: 20rpx;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.total-amount {
+    color: #ff6699;
+    margin-top: 20rpx;
+}
+.total-desc {
+    color: gray;
+    margin-top: 10rpx;
+}
+.settlement-me {
+    color: white;
+    background-color: #ff6699;
+    width: 35%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100rpx;
+}
+/* end */
+
+/* 购物车车不为空的时候 start */
+.full {
+    /* 解决固定底部后的遮挡问题 */
+    padding-bottom: 100rpx;
+}
+.cart-line {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 25rpx;
+    margin-top: 10rpx;
+}
+.item-radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cart-item-img {
+    width: 220rpx;
+    height: 290rpx;
+    margin-left: 10rpx;
+}
+
+.item-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-title {
+    margin-left: 20rpx;
+    margin-top: 10rpx;
+    font-size: 13px;
+}
+.price-tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10rpx;
+}
+.item-price {
+    margin-left: 20rpx;
+    font-size: 14px;
+}
+/* end */
