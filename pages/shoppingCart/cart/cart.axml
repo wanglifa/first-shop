@@ -8,3 +8,62 @@
     </view>
 
 </view>
+<view class="fulle" hidden="{{fullHidden}}">
+  <block a:for="{{finalCartItemList}}" a:for-item="item">
+
+            <view class="cart-line">
+
+                    <view class="item-radio">
+                      <block a:if="{{item.isSelect === 1}}">
+                                <image src="/resources/icon/smallIco/select.png" class="select-ico" 
+                                                onTap="touchItem" data-item="{{item}}" data-index="{{index}}"/>
+                        </block>
+                        <block a:else>
+                                <image src="/resources/icon/smallIco/unselect.png" class="select-ico" 
+                                                onTap="touchItem" data-item="{{item}}" data-index="{{index}}"/>
+                        </block>
+                    </view>
+                    <view>
+                        <image src="{{item.cover}}" class="cart-item-img"/>
+                    </view>
+
+                    <view class="item-block">
+                            <view class="item-title">
+                                    {{item.name}}
+                            </view>
+                            <view class="price-tag">
+                                    <view class="item-price">
+                                        ￥{{item.priceDiscountYuan}}
+                                    </view>
+                                    <view>
+                                        X {{item.counts}}
+                                    </view>
+                            </view>
+                    </view>
+
+            </view>
+
+    </block>
+</view>
+<!-- 底部结算操作栏 -->
+<view class="bottom-settlement" hidden="{{fullHidden}}">
+
+    <view class="sel-all-block" onTap="checkAllBox">
+        <image src="/resources/icon/smallIco/{{visibleAll}}.png" class="select-ico" />
+        <view class="sel-all-words">全选</view>
+    </view>
+
+    <view class="total-cal">
+        <view class="total-amount">
+            合计：{{total}}
+        </view>
+        <view class="total-desc">
+            不含运费、折扣优惠      
+        </view>
+    </view>
+
+    <view class="settlement-me" onTap="goConfirm">
+        去结算{{count}}
+    </view>
+
+</view>
