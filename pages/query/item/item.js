@@ -6,7 +6,9 @@ Page({
     itemContentArr: [],
     animationInfo: {},
     animationOpacity: 0,
-    cartIco: 'cart-empty'
+    cartIco: 'cart-empty',
+    cartAddList: [],
+    index: -1
   },
   onLoad(params) {
     const {id} = params
@@ -35,6 +37,39 @@ Page({
       animationOpacity: 1
     })
     this.showAddToCartAnimation()
+    this.cartItemIncrease()
+
+  },
+  cartItemIncrease() {
+    const itemId = this.data.item.id
+    let cartArray = my.getStorageSync({
+      key: 'cartArray', // 缓存数据的key
+    }).data
+    // 先判断是否有缓存的数据，如果没有就等于一个空数组
+    if(!cartArray) {
+      cartArray = []
+    }
+    // 把当前的对象赋值给这个数组
+    let cartItem = {itemId,counts:1}
+    cartArray.forEach((item,index) => {
+      if (item.itemId === cartItem.itemId) {
+        this.setData({
+          index
+        })
+      }
+    })
+    if (this.data.index > -1) {
+      cartArray[this.data.index].counts+=1
+    } else {
+      cartArray.push(cartItem)
+    }
+    
+
+    my.setStorageSync({
+      key: 'cartArray', // 缓存数据的key
+      data: cartArray, // 要缓存的数据
+    });
+
   },
   showAddToCartAnimation() {
     // 旋转的同时在水平方向移动

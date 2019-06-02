@@ -12,6 +12,13 @@ Page({
   onReady() {
     this.initData()
   },
+  onShow() {
+    let cartArray = my.getStorageSync({
+      key: 'cartArray', // 缓存数据的key
+    }).data
+    console.log('cartArray')
+    console.log(cartArray)
+  },
   initData() {
     index.carousels().then(
       (res => {
